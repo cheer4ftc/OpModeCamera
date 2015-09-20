@@ -12,7 +12,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
  */
 public class LinearDetectColor extends LinearOpMode {
 
-    OpModeCamera cameraOps;
+    OpModeCamera cameraOps = new OpModeCamera();
     DcMotor motorRight;
     DcMotor motorLeft;
 
