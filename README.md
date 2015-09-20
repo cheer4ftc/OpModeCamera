@@ -1,7 +1,7 @@
 # OpModeCamera
 Basic FTC OpMode Functionality for using the front facing camera
 
-To use (9/20/15):
+To use (as of 9/20/15):
 
 1. Add the code in AndroidManifestCameraExtras.xml to your AndroidManifest.xml right above the "<application" line.
 2. Add the code in activity_ftc_controller_camera_extras.xml to your activity_ftc_controller.xml right before the last </RelativeLayout> line.
