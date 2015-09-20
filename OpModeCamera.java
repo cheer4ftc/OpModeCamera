@@ -123,9 +123,6 @@ public class OpModeCamera extends OpMode {
         camera.setPreviewCallback(previewCallback);
 
         Camera.Parameters parameters = camera.getParameters();
-        width = parameters.getPictureSize().width / ds;
-        height = parameters.getPictureSize().height / ds;
-        parameters.setPictureSize(width, height);
 
         width = parameters.getPreviewSize().width / ds;
         height = parameters.getPreviewSize().height / ds;
