@@ -1,0 +1,2 @@
+        manager.register("DetectColor", DetectColor.class);
+        manager.register("LinearDetectColor", LinearDetectColor.class);
