@@ -20,9 +20,6 @@ public class LinearDetectColor extends LinearOpModeCamera {
 
     @Override
     public void runOpMode() throws InterruptedException {
-        Camera camera;
-
-        boolean testCam;
 
         String colorString = "NONE";
 
