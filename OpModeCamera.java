@@ -33,7 +33,8 @@ public class OpModeCamera extends OpMode {
     private int looped = 0;
     private String data;
     private int ds = 1; // downsampling parameter
-    private Camera.PreviewCallback previewCallback = new Camera.PreviewCallback() {
+
+    public Camera.PreviewCallback previewCallback = new Camera.PreviewCallback() {
         public void onPreviewFrame(byte[] data, Camera camera) {
             try {
                 Camera.Parameters parameters = camera.getParameters();
@@ -56,7 +57,30 @@ public class OpModeCamera extends OpMode {
         return imageReady;
     }
 
-    private Camera openCamera(int cameraInfoType) {
+    public boolean isCameraAvailable() {
+        int cameraId = -1;
+        Camera cam = null;
+        int numberOfCameras = Camera.getNumberOfCameras();
+        for (int i = 0; i < numberOfCameras; i++) {
+            Camera.CameraInfo info = new Camera.CameraInfo();
+            Camera.getCameraInfo(i, info);
+            if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) { // Camera.CameraInfo.CAMERA_FACING_FRONT or BACK
+                cameraId = i;
+                break;
+            }
+        }
+        try {
+            cam = Camera.open(cameraId);
+        } catch (Exception e) {
+            Log.e("Error", "Camera Not Available!");
+            return false;
+        }
+        cam.release();
+        cam = null;
+        return true;
+    }
+
+    public Camera openCamera(int cameraInfoType) {
         int cameraId = -1;
         Camera cam = null;
         int numberOfCameras = Camera.getNumberOfCameras();
