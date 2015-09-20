@@ -1,7 +1,6 @@
 package com.qualcomm.ftcrobotcontroller.opmodes;
 
 import android.graphics.Bitmap;
-import android.hardware.Camera;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 
