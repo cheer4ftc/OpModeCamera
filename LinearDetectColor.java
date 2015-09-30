@@ -95,7 +95,7 @@ public class LinearDetectColor extends LinearOpModeCamera {
                 }
 
                 telemetry.addData("Color:", "Color detected is: " + colorString);
-                waitOneHardwareCycle();
+                waitOneFullHardwareCycle();
             }
         }
     }
