@@ -75,7 +75,9 @@ public class OpModeCamera extends OpMode {
             Log.e("Error", "Camera Not Available!");
             return false;
         }
-        cam.release();
+        if(cam != null) {
+            cam.release();
+        }
         cam = null;
         return true;
     }
@@ -169,7 +171,9 @@ public class OpModeCamera extends OpMode {
             }
             camera.stopPreview();
             camera.setPreviewCallback(null);
-            camera.release();
+            if(camera != null) {
+                camera.release();
+            }
             camera = null;
         }
     }
