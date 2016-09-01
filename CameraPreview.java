@@ -1,4 +1,4 @@
-package com.qualcomm.ftcrobotcontroller;
+package org.firstinspires.ftc.robotcontroller.internal;
 
 import android.app.Activity;
 import android.content.Context;
