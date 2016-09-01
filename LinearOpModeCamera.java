@@ -1,4 +1,4 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.robotcontroller.internal;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,10 +8,7 @@ import android.graphics.YuvImage;
 import android.hardware.Camera;
 import android.util.Log;
 
-import com.qualcomm.ftcrobotcontroller.CameraPreview;
-import com.qualcomm.ftcrobotcontroller.FtcRobotControllerActivity;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
 import java.io.ByteArrayOutputStream;
 
@@ -200,7 +197,9 @@ public class LinearOpModeCamera extends LinearOpMode {
             }
             camera.stopPreview();
             camera.setPreviewCallback(null);
-            camera.release();
+            if(camera != null) {
+                camera.release();
+            }
             camera = null;
         }
     }
