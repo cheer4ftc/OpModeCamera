@@ -5,16 +5,15 @@ DetectColor.java and LinearDetectColor.java show examples of OpModes using the c
 
 To use this to make your own custom OpModes, just extend OpModeCamera or LinearOpModeCamera as shown in the examples and change the code that uses the RGB pixels to perform your own image processing functions. You can use all of the normal SDK functions as well (motors, servos, sensors, gamepads, etc.).
 
-To install (as of 9/30/15):
+To install (as of 9/1/16):
 
-1. Add the code in AndroidManifestCameraExtras.xml to your AndroidManifest.xml right above the "<application" line.
-2. Add the code in activity_ftc_controller_camera_extras.xml to your activity_ftc_controller.xml right before the last </RelativeLayout> line.
-3. Add the code in FtcRobotControllerActivityCameraExtras to your FtcRobotControllerActivity.java right after the variables are defined in the class.
-4. Copy CameraPreview.java to the com.qualcomm.ftcrobotcontroller folder.
-5. Copy OpModeCamera.java, LinearOpModeCamera.java, DetectColor.java, and LinearDetectColor.java to the opmodes folder.
-6. Add the code in FtcOpModeRegisterCameraExtras to your FtcOpModeRegister.java file in the register method.
+. Put CameraPreview.java, OpModeCamera.java, and LinearOpModeCamera.java to the org.firstinspires.ftc.robotcontroller.internal folder.
+. Create a new folder called "CameraOpModes" in the TeamCode org.firstinspires.ftc.teamcode folder and put DetectColor.java and LinearDetectColor.java in the CameraOpModes folder.
+. Add the code in AndroidManifestCameraExtras.xml to your AndroidManifest.xml (in the FtcRobotController manifests folder) right above the "<application" line.
+. Add the code in activity_ftc_controller_camera_extras.xml to your activity_ftc_controller.xml (in the FtcRobotController res/layout folder) right before the last </RelativeLayout> line.
+. Add the code in FtcRobotControllerActivityCameraExtras to your FtcRobotControllerActivity.java right after the variables are defined in the class. Import android.hardware.Camera in this class file also.
 
-The files DetectColor.java and LinearDetectColor.java show how to use/extend the OpModeCamera class to access the RGB image values from the camera.  These OpModes put a camera preview window on the RobotController screen and report back to the DriverStation telemetry whether red, green, or blue is the color most seen by the camera at a given time.
+The files DetectColor.java and LinearDetectColor.java show how to use/extend the OpModeCamera and LinearOpModeCamera classes to access the RGB image values from the camera.  These OpModes put a camera preview window on the RobotController screen and report back to the DriverStation telemetry whether red, green, or blue is the color most seen by the camera at a given time.
 
 The regular OpModeCamera like the one shown in DetectColor.java seems to work well.
 
