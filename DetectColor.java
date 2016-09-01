@@ -1,12 +1,19 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode.CameraOpModes;
 
 import android.graphics.Bitmap;
+
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+
+import org.firstinspires.ftc.robotcontroller.internal.OpModeCamera;
 
 /**
  * TeleOp Mode
  * <p/>
  * Enables control of the robot via the gamepad
  */
+
+@TeleOp(name="DetectColor", group="ZZOpModeCameraPackage")
+//@Disabled
 public class DetectColor extends OpModeCamera {
 
     int ds2 = 2;  // additional downsampling of the image
@@ -34,7 +41,6 @@ public class DetectColor extends OpModeCamera {
      * This method will be called repeatedly in a loop
      * @see com.qualcomm.robotcore.eventloop.opmode.OpMode#loop()
      */
-
     @Override
     public void loop() {
         long startTime = System.currentTimeMillis();
