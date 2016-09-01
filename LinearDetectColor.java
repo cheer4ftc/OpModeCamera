@@ -1,14 +1,20 @@
-package com.qualcomm.ftcrobotcontroller.opmodes;
+package org.firstinspires.ftc.teamcode.CameraOpModes;
 
 import android.graphics.Bitmap;
 
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+
+import org.firstinspires.ftc.robotcontroller.internal.LinearOpModeCamera;
 
 /**
  * TeleOp Mode
  * <p/>
  * Enables control of the robot via the gamepad
  */
+
+@TeleOp(name="LinearDetectColor", group="ZZOpModeCameraPackage")
+//@Disabled
 public class LinearDetectColor extends LinearOpModeCamera {
 
     DcMotor motorRight;
@@ -95,8 +101,11 @@ public class LinearDetectColor extends LinearOpModeCamera {
                 }
 
                 telemetry.addData("Color:", "Color detected is: " + colorString);
-                waitOneFullHardwareCycle();
+                telemetry.update();
+                sleep(10);
             }
+
+            stopCamera();
         }
     }
 }
