@@ -10,7 +10,7 @@ To use this to make your own custom OpModes, just extend OpModeCamera or LinearO
 
 To install (as of 9/1/16):
 
-* Put CameraPreview.java, OpModeCamera.java, and LinearOpModeCamera.java to the org.firstinspires.ftc.robotcontroller.internal folder.
+* Put CameraPreview.java, OpModeCamera.java, and LinearOpModeCamera.java in the org.firstinspires.ftc.robotcontroller.internal folder.
 * Create a new folder called "CameraOpModes" in the TeamCode org.firstinspires.ftc.teamcode folder and put DetectColor.java and LinearDetectColor.java in the CameraOpModes folder.
 * Add the code in AndroidManifestCameraExtras.xml to your AndroidManifest.xml (in the FtcRobotController manifests folder) right above the "<application" line.
 * Add the code in activity_ftc_controller_camera_extras.xml to your activity_ftc_controller.xml (in the FtcRobotController res/layout folder) right before the last </RelativeLayout> line.
