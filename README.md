@@ -10,7 +10,7 @@ To use this to make your own custom OpModes, just extend OpModeCamera or LinearO
 
 To install (as of 9/1/16):
 
-* Put the for_camera_opmodes folder in the FtcRobotController java org.firstinspires.ftc.robotcontroller.internal folder.
+* Put the for_camera_opmodes folder in the FtcRobotController java folder.
 * Put the sample_camera_opmodes folder in the TeamCode java folder.
 * Add the code in AndroidManifestCameraExtras.xml to your AndroidManifest.xml (in the FtcRobotController manifests folder) right above the "<application" line.
 * Add the code in activity_ftc_controller_camera_extras.xml to your activity_ftc_controller.xml (in the FtcRobotController res/layout folder) right before the last < /RelativeLayout > line.
