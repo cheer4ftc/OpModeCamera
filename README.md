@@ -1,6 +1,6 @@
 # OpModeCamera
 
-**UPDATED on 9/5/16 to organize files into package for easier installation and support.**
+**UPDATED on 9/5/16 to organize files into packages for easier installation and support.**
 
 **UPDATED on 9/1/16 to support the 2016/17 FTC SDK code structure!**
 
