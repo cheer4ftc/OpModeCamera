@@ -1,5 +1,7 @@
 # OpModeCamera
 
+**UPDATED on 9/5/16 to organize files into package for easier installation and support.**
+
 **UPDATED on 9/1/16 to support the 2016/17 FTC SDK code structure!**
 
 Basic FTC OpMode Functionality for using the front facing camera on the ZTE Speed phone for FTC.
