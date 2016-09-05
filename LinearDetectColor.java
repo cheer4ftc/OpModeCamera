@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.CameraOpModes;
+package CameraOpModes;
 
 import android.graphics.Bitmap;
 
