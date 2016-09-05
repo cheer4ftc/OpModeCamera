@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.robotcontroller.internal.for_camera_opmodes;
+package for_camera_opmodes;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
