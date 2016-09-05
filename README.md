@@ -10,7 +10,7 @@ DetectColor.java and LinearDetectColor.java show examples of OpModes using the c
 
 To use this to make your own custom OpModes, just extend OpModeCamera or LinearOpModeCamera as shown in the examples and change the code that uses the RGB pixels to perform your own image processing functions. You can use all of the normal SDK functions as well (motors, servos, sensors, gamepads, etc.). Note that the image data is rotated 90 degrees from horizontal, so the (0,0) pixel is in the lower right corner, with increasing X values going up and increasing Y values going left.
 
-To install (as of 9/1/16):
+To install (as of 9/5/16):
 
 * Put the for_camera_opmodes folder in the FtcRobotController java folder.
 * Put the sample_camera_opmodes folder in the TeamCode java folder.
