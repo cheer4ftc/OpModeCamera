@@ -1,10 +1,12 @@
 # OpModeCamera
 
+**UPDATED on 10/30/16 to cleanly teardown the camera in LinearOpModes consistent with the newly improved LinearOpMode format which no longer throws exceptions.**
+
 **UPDATED on 9/15/16 to cleanly teardown the camera in LinearOpModes, rotate the returned images so (0,0) corresponds to the bottom left of the preview window, and clean up some imports.**
 
 **UPDATED on 9/5/16 to organize files into packages for easier installation and support.**
 
-**UPDATED on 9/1/16 to support the 2016/17 FTC SDK code structure!**
+**UPDATED on 9/1/16 to support the 2016/17 FTC SDK code structure**
 
 Basic FTC OpMode Functionality for using the front facing camera on the ZTE Speed phone for FTC.
 
